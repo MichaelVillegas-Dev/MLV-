@@ -1,21 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-} 
-
-body
-
-{
-    background-color: black;
 }
 
+body {
+  background-color: black;
+}
 
-.html
-
-{
+.html {
   scroll-behavior: smooth smooth;
 }
 
@@ -740,101 +736,79 @@ ul{
 
 
 
-
-
-
 /*==================== MEDIA QUERIES ====================*/
 
-
-@media (max-width: 1000px){
-    nav{
-      padding: 0 40px 0 50px;
-    }
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 40px 0 50px;
   }
-  @media (max-width: 920px) {
-    nav .menu-btn i{
-      display: block;
-    }
-    #click:checked ~ .menu-btn i:before{
-      content: "\f00d";
-    }
-    nav ul{
-      position: fixed;
-      top: 80px;
-      left: -100%;
-      background: #111;
-      height: 100vh;
-      width: 100%;
-      text-align: center;
-      display: block;
-      transition: all 0.3s ease;
-    }
-    #click:checked ~ ul{
-      left: 0;
-    }
-    nav ul li{
-      width: 100%;
-      margin: 40px 0;
-    }
-    nav ul li a{
-      width: 100%;
-      margin-left: -100%;
-      display: block;
-      font-size: 20px;
-      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
-    #click:checked ~ ul li a{
-      margin-left: 0px;
-    }
-
-    nav ul li a.active,
-    nav ul li a:hover{
-      background: none;
-      color: cyan;
-    }
-
-    @media (max-width: 959px) {
-
-    .wrapper
-
-    {
-      text-align: center;
-
-      }  }
-
-
-.container .card
-
-{
-  margin-top: 100px;
-  margin-bottom: 300px;
-}
-      
-.container .card .img
-
-{
-  height: 100%;
 }
 
-
-
-.container .card .top-text .name
-{
- 
-  color: #dacaca;
-}
-.container .card .top-text p{
-
-  color: #e74c3c;
- 
-}
-
-
-.card .bottom-text .text .btn
-
-{
-  margin-bottom: 300px;
-  
-}
-
+@media (max-width: 920px) {
+  nav .menu-btn i {
+    display: block;
   }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: cyan;
+  }
+}
+
+@media (max-width: 959px) {
+  .wrapper {
+    text-align: center;
+  }
+
+  .container .card {
+    margin-top: 100px;
+    margin-bottom: 300px;
+  }
+
+  .container .card .img {
+    height: 100%;
+  }
+
+  .container .card .top-text .name {
+    color: #dacaca;
+  }
+
+  .container .card .top-text p {
+    color: #e74c3c;
+  }
+
+  .card .bottom-text .text .btn {
+    margin-bottom: 300px;
+  }
+}
